@@ -1,7 +1,7 @@
 var navNeedFade=false;
 $(document).ready(function () {
-    $("#hero").height($("herovideo").height());
     $(window).scroll(function () {
+        //console.log($(window).scrollTop());
         if(($(window).scrollTop()>$("#hero").innerHeight())!=navNeedFade) {
             navNeedFade=($(window).scrollTop()>$("#hero").innerHeight());
             if ($(window).scrollTop() > $("#hero").innerHeight()) {
@@ -22,5 +22,11 @@ $(document).ready(function () {
             }
         }
     });
+    setTimeout(function () {
+        $(window).scroll();
+    },1000);
 
+    $(".mouseover-border").mouseenter(function () {
+        console.log($(this).attr("no"));
+    })
 });

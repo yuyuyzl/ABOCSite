@@ -47,7 +47,7 @@ body {
 .herovideowrap{
     width:100%;
     position: absolute;
-    padding-bottom: 600px;
+    padding-bottom: 800px;
     height: 0;
     overflow: hidden;
     align-content: center;
@@ -66,3 +66,30 @@ body {
     margin-top:-540px;
 }
 
+.herodiv{
+    height: 800px;
+    padding-top:200px;
+    margin-bottom: 200px
+}
+
+.div2{
+    height: 800px;
+    padding-top:150px;
+    margin-bottom: 200px
+}
+
+.card1{
+    height: 400px;
+}
+
+
+
+.mouseover-border{
+    border: 0;
+    box-shadow: 0px 0px 5px #aaa0;
+    transition: box-shadow 300ms;
+
+}
+.mouseover-border:hover{
+    box-shadow: 0px 0px 5px #aaa !important;
+}
