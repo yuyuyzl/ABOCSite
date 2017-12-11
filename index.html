@@ -11,37 +11,13 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/common.js"></script>
     <script src="js/index.js"></script>
 
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top" id="navmain">
-    <a class="navbar-brand" href="#">
-        <img class="logowhite" src="img/navlogo.png" height="30" alt="">
-        <img class="logoblack" src="img/navlogoblack.png" height="30" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">美食之味</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">风土人情</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">舌尖之道</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">关于我们</a>
-            </li>
-        </ul>
-
-    </div>
-</nav>
-
+<div id="navmarker" style="display: none"></div>
 <div class="herovideowrap">
     <video class="herovideo" autoplay="" muted="" playsinline="" loop="" width="100%" id="herovideo">
         <source src="img/videohero.mp4" type="video/mp4">
@@ -56,70 +32,103 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container div1">
     <h4 class="p-3 text-center">山珍海味，煎炒烹炸</h4>
     <h1 class="display-3 text-center">一粥一饭，当思来之不易</h1>
-    <div class="row" style="margin: 100px 0 200px 0">
+    <div class="row" style="margin: 50px 0 250px 0;height: 402px">
         <div class="col-sm-4">
-            <div class="card text-center">
-                <div class="card-body card1">
+            <div class="card" no="1">
+                <img class="card-img-top" src="img/div1_1.bmp" alt="Card image cap">
+                <div class="card-body card-body1">
                     <h4 class="card-title">获取食材往往是最难的一步</h4>
+                    <p class="card-text">美味的前世是如画的风景。
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card text-center">
-                <div class="card-body card1">
+            <div class="card" no="2">
+                <img class="card-img-top" src="img/div1_2.bmp" alt="Card image cap">
+                <div class="card-body card-body1">
                     <h4 class="card-title">美食是如何炼成的</h4>
+                    <p class="card-text">大多数美食，都是不同食材组合碰撞产生的裂变性奇观。若以人情世故来看食材的相逢，有的是让人叫绝的天作之合，有的是叫人动容的邂逅偶遇，有的是令人击节的相见恨晚。</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card text-center">
-                <div class="card-body card1">
+            <div class="card" no="3">
+                <img class="card-img-top" src="img/div1_3.bmp" alt="Card image cap">
+                <div class="card-body card-body1">
                     <h4 class="card-title">美食的正确打开方式</h4>
+                    <p class="card-text">无论脚步走多远，在人的脑海中，只有故乡的味道熟悉而顽固，它就像一个味觉定位系统，一头锁定了千里之外的异地，另一头则永远牵绊着记忆深处的故乡。</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid" style="background-color: #fff">
-    <div class="container div2">
+<div class="jumbotron jumbotron-fluid jumbotron-2" id="jb2">
+    <div class="container div2 text-white">
         <h1 class="display-3">才下舌尖，又上心间</h1>
-        <hr class="my-4" style="padding-bottom: 40px">
-        <div class="card bg-transparent mouseover-border" no="1" style="width: 25rem;padding-right: 5rem">
-            <div class="card-body">
-                <h4 class="card-title">一方水土养一方人</h4>
-                <p class="card-text">无论靠山还是靠水，劳动者们都有专属于自己家人的美味。</p>
+        <hr class="my-4 border-light" style="padding-bottom: 40px">
+        <div class="card bg-transparent mouseover-border" no="1">
+            <div class="card-body row">
+                <div class="col-10">
+                    <h4 class="card-title">一方水土养一方人</h4>
+                    <p class="card-text">无论靠山还是靠水，劳动者们都有专属于自己家人的美味。</p>
+                </div>
+                <svg class="octicon" height="16" version="1.1" viewBox="0 0 6 16" width="6"><path fill-rule="evenodd" d="M0 14l6-6-6-6z"></path></svg>
             </div>
         </div>
-        <div class="card bg-transparent mouseover-border" no="2" style="width: 25rem;padding-right: 5rem">
-            <div class="card-body">
-                <h4 class="card-title">美食背后寄寓的绮思</h4>
-                <p class="card-text">传承中国文化的不仅仅是唐诗宋词京剧昆曲，它包含着与我们生活相关的每一个细节。</p>
+        <div class="card bg-transparent mouseover-border" no="2">
+            <div class="card-body row">
+                <div class="col-10">
+                    <h4 class="card-title">美食背后寄寓的绮思</h4>
+                    <p class="card-text">传承中国文化的不仅仅是唐诗宋词京剧昆曲，它包含着与我们生活相关的每一个细节。</p>
+                </div>
+                <svg class="octicon" height="16" version="1.1" viewBox="0 0 6 16" width="6"><path fill-rule="evenodd" d="M0 14l6-6-6-6z"></path></svg>
             </div>
         </div>
-        <div class="card bg-transparent mouseover-border" no="2" style="width: 25rem;padding-right: 5rem">
-            <div class="card-body">
-                <h4 class="card-title">将华夏连接起来的美食</h4>
-                <p class="card-text">中国人善于用食物来缩短他乡与故乡的距离。</p>
+        <div class="card bg-transparent mouseover-border" no="3">
+            <div class="card-body row">
+                <div class="col-10">
+                    <h4 class="card-title">将华夏连接起来的美食</h4>
+                    <p class="card-text">中国人善于用食物来缩短他乡与故乡的距离。</p>
+                </div>
+                <svg class="octicon" height="16" version="1.1" viewBox="0 0 6 16" width="6"><path fill-rule="evenodd" d="M0 14l6-6-6-6z"></path></svg>
             </div>
         </div>
-        <div class="card bg-transparent mouseover-border" no="2" style="width: 25rem;padding-right: 5rem">
-            <div class="card-body">
-                <h4 class="card-title">凝结在美食里的文化</h4>
-                <p class="card-text">在中文里，'火候'一词的使用并不局限在厨房，更能用来评价处世的修养，以及为人的境界</p>
+        <div class="card bg-transparent mouseover-border" no="4">
+            <div class="card-body row">
+                <div class="col-10">
+                    <h4 class="card-title">凝结在美食里的文化</h4>
+                    <p class="card-text">在中文里，'火候'一词的使用并不局限在厨房，更能用来评价处世的修养，以及为人的境界。</p>
+                </div>
+                <svg class="octicon" height="16" version="1.1" viewBox="0 0 6 16" width="6"><path fill-rule="evenodd" d="M0 14l6-6-6-6z"></path></svg>
             </div>
         </div>
-
-
     </div>
 </div>
 
+<div class="container div3">
+    <h4 class="p-3 text-center">记录的是美食，展现的是中国</h4>
+    <h1 class="display-3 text-center">家，国，世界</h1>
+    <div class="text-center" style="padding-top: 50px">
+        <button class="btn-dark btn btn-lg" style="width: 30%">美食与中华</button>
+    </div>
+
+
+</div>
+
+
+<div id="footermarker" style="display: none"></div>
 
 
 
+<img class="preloader" src="img/div2_1.png">
+<img class="preloader" src="img/div2_2.png">
+<img class="preloader" src="img/div2_3.png">
+<img class="preloader" src="img/div2_4.png">
 
 </body>
 </html>

@@ -1,5 +1,9 @@
 var navNeedFade=false;
 $(document).ready(function () {
+    $("#navmain").removeClass("bg-white");
+    $("#navmain").removeClass("navbar-light");
+    $("#navmain").addClass("bg-transparent");
+    $("#navmain").addClass("navbar-dark");
     $(window).scroll(function () {
         //console.log($(window).scrollTop());
         if(($(window).scrollTop()>$("#hero").innerHeight())!=navNeedFade) {
@@ -27,6 +31,14 @@ $(document).ready(function () {
     },1000);
 
     $(".mouseover-border").mouseenter(function () {
-        console.log($(this).attr("no"));
+        var no=$(this).attr("no");
+        var jb2=$("#jb2");
+        jb2.addClass("bgi"+no);
     })
+    $(".mouseover-border").mouseleave(function () {
+        var no=$(this).attr("no");
+        var jb2=$("#jb2");
+        jb2.removeClass("bgi"+no);
+    })
+
 });
